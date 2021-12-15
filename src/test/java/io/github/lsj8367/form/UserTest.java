@@ -25,7 +25,7 @@ class UserTest {
         final Set<ConstraintViolation<User>> validate = validator.validate(user);
 
         assertThat(validate.stream().findFirst()
-            .get().getMessage()).isEqualTo("name is not null");
+            .get().getMessage()).isEqualTo("email is not null");
     }
 
     @Test
